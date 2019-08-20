@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Article</h1>
+  <h3><%= @article.title %></h3>
+  <p><%= @article.content %></p>
+  <p><%= link_to "Home", articles_path %></p>
+  <p><%= link_to "Edit", edit_article_path(@article.id) %></p>
+  <p><%= link_to "Delete", article_path(@article.id), method: "delete",
+      data: { confirm: "Are you sure?"} %></p>
+</div>

@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Show your article</h1>
+  <% @articles.each do |i| %>
+    <div id="show-task", style="display: flex">
+      <h2><%= link_to i.title, article_path(i) %></h2>
+    </div>
+  <% end %>
+  <p><%= link_to "New", new_article_path %></p>
+
+</div>
